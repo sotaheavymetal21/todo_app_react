@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ColorfulMessage from "./ColorfulMessage";
+import { ColorfulMessage } from "./ColorfulMessage";
 
 const App = () => {
   const [num, setNum] = useState(0);
@@ -27,7 +27,8 @@ return (
     <h2 style={{ color: "green" }}>Hello World!</h2>
     <ColorfulMessage ColorfulMessage color="green">俺はドンキーコング</ColorfulMessage>
     <ColorfulMessage ColorfulMessage color="pink">私はディクシーコング</ColorfulMessage>
-    <button onClick={onClickCountUp}>絶対押してね</button>
+    <button onClick={onClickCountUp}>押してね</button>
+    <button onClick={onClickSwitchShowFlag}>on/off</button>
     <p>{ num }</p>
     { faceShowFlag  && <p>♪( ´θ｀)ノ</p>}
   </>
